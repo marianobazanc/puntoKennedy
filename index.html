@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Kennedy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/46bcdbb46f.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="text-center bg-bordo-kennedy text-white py-2">
+        <h1 class="fw-bold mb-0">Punto Kennedy</h1>
+        <p class="mb-2">Catamarca - La Rioja - Santiago del estero</p>
+    </header>
+
+    <section>
+        <p>Imagenes con datos de las carreras</p>
+    </section>
+
+    <main class="container">
+        <section class="d-flex">
+            <div class="col-6 bg-bordo-kennedy p-5">
+                <div class="text-white text-uppercase">
+                    <p class="mb-0">Te asesoramos</p>
+                    <p class="fs-2 mb-1">Más información</p>
+                    <hr class="mt-0">
+                </div>
+
+                <form>
+                    <div class="d-flex gap-4 mb-3">
+                        <input class="form-control rounded-0 transparent-input" type="text" placeholder="Nombre">
+                        <input class="form-control rounded-0 transparent-input" type="text" placeholder="Apellido">
+                    </div>
+                    <div class="d-flex gap-4 mb-3">
+                        <input class="form-control rounded-0 transparent-input" type="text" placeholder="Email">
+                        <input class="form-control rounded-0 transparent-input" type="text" placeholder="Numero">
+                    </div>
+                    <div class="d-flex gap-4 mb-2">
+                        <select class="form-control rounded-0" name="provincias" id="provincias">
+                            <option hidden selected>Seleccione una provincia </option>
+                            <option value="catamarca">Catamarca</option>
+                            <option value="laRioja">La Rioja</option>
+                            <option value="santiagoDelEstero">Santiago del Estero</option>
+                        </select>
+
+                        <select class="form-control rounded-0" name="carreras" id="carreras">
+                            <option hidden selected>Seleccione una carrera</option>
+                            <option value="a">a</option>
+                            <option value="b">a</option>
+                            <option value="c">a</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-dark form-control rounded-0 mt-3">Enviar</button>
+                </form>
+            </div>
+
+            <div class="bg-negro-kennedy col-6 p-5">
+                <div class="text-white">
+                    <p class="mb-0"><strong>Punto Kennedy</strong> | Catamarca - La Rioja - Santiago del Estero</p>
+                    <p class="fs-2 mb-1 text-uppercase">Educación Virtual</p>
+                    <hr class="mt-0">
+                </div>
+                <div class="text-white fw-light">
+                    <p>¡Viví esta experiencia! En esta modalidad accederás al material de estudio desde cualquier lugar.
+                    </p>
+                    <p>Podrás rendir tus exámenes en nuestro <strong> Punto Kennedy de Catamarca, La Rioja y Santiago
+                            del Estero</strong>, que nos acerca a cada región, disminuyendo las distancias de traslado,
+                        optimizando tu tiempo y reduciendo la inversión.</p>
+                    <p>Validada por resolución <strong>2019-36342887-APN-CONEAU.</strong></p>
+                    <a class="btn btn-success rounded-0" href="#" target="_blank">Contactanos por Whatsapp</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5">
+            <div class="text-center d-flex flex-column gap-0 align-items-center beneficios">
+                <p class="text-uppercase mb-0 bordo-kennedy fw-bold">Beneficios</p>
+                <h3 class="text-uppercase">Modalidad virtual</h3>
+                <hr>
+            </div>
+            <div class="beneficios mt-4 d-flex-wrap row justify-content-center gap-lg-2">
+                <div class="col-md-3">
+                    <div class="d-flex gap-2">
+                        <i class="fa-regular fa-clock bordo-kennedy fs-3"></i>
+                        <h4 class="text-uppercase fs-5 bordo-kennedy fw-bold">Flexibilidad</h4>
+                    </div>
+                    <p class="fw-light text-muted">Permite flexibilidad y adaptación a los tiempos de cada estudiante,
+                        pudiendo acceder al aula
+                        virtual desde cualquier lugar, en cualquier momento, el tiempo y las veces que lo desees.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-2">
+                        <i class="fa-solid fa-book fs-3 bordo-kennedy"></i>
+                        <h4 class="text-uppercase fs-5 bordo-kennedy fw-bold">Biblioteca virtual</h4>
+                    </div>
+                    <p class="fw-light text-muted">Accedés a una biblioteca virtual con importante cantidad de volúmenes
+                        disponibles.
+                        En 2020 la plataforma ha sido actualizada y ahora cuenta con más títulos a disposición.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-2">
+                        <i class="fa-regular fa-handshake fs-3 bordo-kennedy"></i>
+                        <h4 class="text-uppercase fs-5 bordo-kennedy fw-bold">Convenios</h4>
+                    </div>
+                    <p class="fw-light text-muted">Poseemos una red nacional de convenios de práctica y pasantías con
+                        numerosas instituciones, para promover el contacto del estudiante con el ámbito profesional, y
+                        planes de estudio que contemplan un equilibrio entre la formación teórica y la práctica.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-solid fa-person-chalkboard fs-3 bordo-kennedy"></i>
+                        <h4 class="fs-5 text-uppercase bordo-kennedy fw-bold">atención personalizada</h4>
+                    </div>
+                    <p class="text-muted fw-light">Tendrás la posibilidad de interactuar con los docentes y con los
+                        demás estudiantes, de manera
+                        pública por medio de foros, y de manera privada por medio del chat.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-2">
+                        <i class="fa-solid fa-mobile-screen fs-3 bordo-kennedy"></i>
+                        <h4 class="fs-5 text-uppercase bordo-kennedy fw-bold">Experiencia única</h4>
+                    </div>
+                    <p class="text-muted fw-light">Estudiarás con una plataforma que hoy es utilizada por las mejores
+                        universidades del mundo.
+                        Podrás acceder al material de estudio desde cualquier lugar.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-2">
+                        <i class="fa-solid fa-user-graduate fs-3 bordo-kennedy"></i>
+                        <h4 class="text-uppercase fw-bold fs-5 bordo-kennedy">Modelo actual</h4>
+                    </div>
+                    <p class="text-muted fw-light">
+                        Estarás formándote en educación de vanguardia, el modelo virtual te inserta hoy en el futuro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-negro-kennedy p-5">
+            <img src="#" alt="#">
+            <div class="text-white">
+                <h5 class="text-uppercase mb-0">Universidad Kennedy</h5>
+                <p class="fw-bold text-uppercase fs-3">Por qué elegirnos</p>
+                <hr>
+                <ul>
+                    <li>Somos una universidad con <strong>56 años de trayectoria.</strong></li>
+                    <li>Rendis el 100% de la carrera <strong>en tu casa.</strong></li>
+                    <li>Nuestro cuerpo docente cuenta con una <strong>destacada trayectoria profesional.</strong></li>
+                    <li>¡Valoramos tu esfuerzo! Reconocimiento de tus materias cursadas en otra insitución.</li>
+                    <li>Descuentos especiales <strong>para empresas.</strong></li>
+                    <li>Contamos con <strong>beneficios exclusivos</strong> y las mejores formas de financiación.</li>
+                </ul>
+                <div class="d-flex gap-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-book-open fs-1 bordo-kennedy"></i>
+                            <p class="fs-1 fw-bold mb-0">50</p>
+                        </div>
+                        <p>Programas</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-graduation-cap fs-1 bordo-kennedy"></i>
+                            <p class="fs-1 fw-bold mb-0">30000</p>
+                        </div>
+                        <p>Egresados</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-chart-line fs-1 bordo-kennedy"></i>
+                            <p class="fs-1 fw-bold mb-0">56</p>
+                        </div>
+                        <p>Años de trayectoria</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-center flex-column flex-lg-row py-5">
+            <div class="col-lg-4 d-flex flex-column align-items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.487663657329!2d-65.78355918495011!3d-28.464856866567594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428bef37cd75d%3A0x6e6c538864543632!2sMaip%C3%BA%20316%20k4700%2C%20K4700%20San%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses-419!2sar!4v1675577846444!5m2!1ses-419!2sar"
+                    width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3 class="fs-5"><strong>Punto Kennedy</strong> | Catamarca</h3>
+            </div>
+            <div class="col-lg-4 d-flex flex-column align-items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.451550092058!2d-66.85715748492441!3d-29.415596209272316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427da35470344cd%3A0xdd882c8b0206e7fc!2s9%20de%20Julio%20183%2C%20F5300APF%20La%20Rioja!5e0!3m2!1ses-419!2sar!4v1675577993932!5m2!1ses-419!2sar"
+                    width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3 class="fs-5"><strong>Punto Kennedy</strong> | La Rioja</h3>
+            </div>
+            <div class="col-lg-4 d-flex flex-column align-items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.7093316964074!2d-64.26170093496799!3d-27.787929036964247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b52116541bda1%3A0x63357d1eff4af526!2sPlaza%20Libertad%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1675578117311!5m2!1ses-419!2sar"
+                    width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3 class="fs-5"><strong>Punto Kennedy</strong> | Santiago del Estero</h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/46bcdbb46f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.bordo-kennedy {
+    color: #6d1931;
+}
+
+.bg-bordo-kennedy {
+    background-color: #6d1931;
+}
+
+.bg-negro-kennedy{
+    background-color: #1d1d1b;
+}
+
+hr {
+    width: 25%;
+}
+.beneficios hr{
+    width: 10%;
+    border: 3px solid #6d1931;
+    margin-top: 0;
+}
+
+/*Input transparente*/
+input.transparent-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #ffffff6e !important;
+}
+
+.transparent-input {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input.transparent-input {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+::placeholder {
+    color: white !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white !important;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white !important;
+}
+
+/*Select transparente*/
+select {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-color: #ffffff6e !important;
+    background-color: transparent !important;
+}
+select{
+    color: #fff !important;
+}
+option{
+    color: #000 !important;
+}
+
+/*Seccion Beneficios
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 2rem;
+    justify-content: center;
+}*/
