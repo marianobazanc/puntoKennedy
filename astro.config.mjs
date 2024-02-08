@@ -10,4 +10,4 @@ export default defineConfig({
       mdi: ["account", "account-plus", "account-minus"]
     }
   })]
-});
+}); 

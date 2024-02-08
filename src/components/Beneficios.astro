@@ -1,12 +1,74 @@
-<section>
-    <div class="text-center">
-        <h3 class="uppercase font-bold text-sm text-[#6d1931]">Beneficios</h3>
-        <h2 class="uppercase text-3xl font-semibold">Modalidad Virtual</h2>
-    </div>
-    <hr class="border h-2 w-1/3 m-auto bg-[#DAC5CB] w-28 mt-1"/>
-    <section>
-        <div class="">
-            
-        </div>
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="py-10">
+  <div class="text-center">
+    <h3 class="uppercase font-bold text-sm text-[#6d1931]">Beneficios</h3>
+    <h2 class="uppercase text-3xl font-semibold">Modalidad Virtual</h2>
+  </div>
+  <hr class="border h-2 w-1/3 m-auto bg-[#DAC5CB] w-28 mt-1" />
+  <section class="flex flex-col md:flex-row md:flex-wrap  m-auto py-5 gap-6 justify-center items-center md:items-start">
+    <section class="w-4/5 md:w-1/4">
+      <div class="flex items-center text-[#6d1931] gap-1">
+        <Icon name="time" size={30} />
+        <h4 class="font-bold text-lg uppercase">Flexibilidad</h4>
+      </div>
+      <p class="font-light">
+        Permite flexibilidad y adaptación a los tiempos de cada estudiante,
+        pudiendo acceder al aula virtual desde cualquier lugar, en cualquier
+        momento, el tiempo y las veces que lo desees.
+      </p>
     </section>
+
+    <section class="w-4/5 md:w-1/4">
+        <div class="flex items-center text-[#6d1931] gap-1">
+          <Icon name="book" size={30} />
+          <h4 class="font-bold text-lg uppercase">Biblioteca Virtual</h4>
+        </div>
+        <p class="font-light">
+            Accedés a una biblioteca virtual con importante cantidad de volúmenes disponibles. En 2020 la plataforma ha sido actualizada y ahora cuenta con más títulos a disposición.
+        </p>
+      </section>
+
+      <section class="w-4/5 md:w-1/4">
+        <div class="flex items-center text-[#6d1931] gap-1">
+          <Icon name="handshake" size={30} />
+          <h4 class="font-bold text-lg uppercase">Convenios</h4>
+        </div>
+        <p class="font-light">
+            Poseemos una red nacional de convenios de práctica y pasantías con numerosas instituciones, para promover el contacto del estudiante con el ámbito profesional, y planes de estudio que contemplan un equilibrio entre la formación teórica y la práctica.
+        </p>
+      </section>
+
+      <section class="w-4/5 md:w-1/4">
+        <div class="flex items-center text-[#6d1931] gap-1">
+          <Icon name="teacher" size={30} />
+          <h4 class="font-bold text-lg uppercase">ATENCIÓN PERSONALIZADA</h4>
+        </div>
+        <p class="font-light">
+            Tendrás la posibilidad de interactuar con los docentes y con los demás estudiantes, de manera pública por medio de foros, y de manera privada por medio del chat.
+        </p>
+      </section>
+
+      <section class="w-4/5 md:w-1/4">
+        <div class="flex items-center text-[#6d1931] gap-1">
+          <Icon name="laptop" size={30} />
+          <h4 class="font-bold text-lg uppercase">Experiencia única</h4>
+        </div>
+        <p class="font-light">
+            Estudiarás con una plataforma que hoy es utilizada por las mejores universidades del mundo. Podrás acceder al material de estudio desde cualquier lugar.
+        </p>
+      </section>
+
+      <section class="w-4/5 md:w-1/4">
+        <div class="flex items-center text-[#6d1931] gap-1">
+          <Icon name="hat-graduate" size={30} />
+          <h4 class="font-bold text-lg uppercase">Modelo Actual</h4>
+        </div>
+        <p class="font-light">
+            Estarás formándote en educación de vanguardia, el modelo virtual te inserta hoy en el futuro.
+        </p>
+      </section>
+  </section>
 </section>
