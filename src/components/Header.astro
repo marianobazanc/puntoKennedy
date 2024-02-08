@@ -1,11 +1,58 @@
-<nav class="bg-[#6d1931] flex items-center justify-around py-4">
-    <a href="#inicio"><img width="150" src="https://puntokennedy.com.ar/img/Logo-PK_blanco.webp" alt="logo punto kennedy"/></a>
-    <section>
-        <ul class="flex gap-4">
+---
+import { Icon } from "astro-icon/components";
+---
+<nav class="z-10 bg-[#6d1931] flex items-center justify-between px-10 justify-between py-4 md:justify-around fixed top-0 w-full sticky ">
+    <a href="#inicio"><img width="150" src="https://puntokennedy.com.ar/img/Logo-PK_blanco.webp" alt="logo punto kennedy"></a>
+    <button id="button" class="md:hidden">
+        <Icon name="menu" size={50} class="text-white" />
+    </button>
+        <ul class="hidden md:flex md:gap-6">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#asesoramiento">Asesoramiento</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-    </section>
+        <ul id="navbar" class="flex flex-col gap-10 top-20 left-0 bg-[#6d1931] h-dvh w-full fixed text-2xl pt-6 text-center hidden">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#asesoramiento">Asesoramiento</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
 </nav> 
+
+<style>
+    .animation {
+        animation: slide-in 0.1s ease-in-out forwards;
+    }
+
+    @keyframes slide-in {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<script>
+    const button = document.getElementById("button");
+    const navbar = document.getElementById("navbar");
+    const menuItems = document.querySelectorAll("#navbar li a");
+
+    // Iteramos sobre cada elemento <li> y agregamos un evento de clic
+    menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener("click", function () {
+            // Ocultamos el menú
+            const navbar = document.getElementById("navbar");
+            navbar?.classList.add("hidden");
+            navbar?.classList.remove("animation");
+        });
+    });
+
+    button?.addEventListener("click", function () {
+        navbar?.classList.toggle("hidden");
+        navbar?.classList.toggle("animation");
+    });
+</script>
