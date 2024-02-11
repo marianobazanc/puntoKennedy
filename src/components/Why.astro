@@ -1,0 +1,80 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="bg-[#1d1d1b] flex flex-col md:flex-row text-center md:text-start justify-center gap-10 md:gap-20 py-10">
+    <img
+        width="400"
+        class="m-auto md:m-0"
+        src="https://puntokennedy.com.ar/img/presentacion_kennedy.webp"
+        alt="publicidad punto kennedy"
+    />
+    <div class="text-white">
+        <h3 class="uppercase font-bold text-xl">Universidad Kennedy</h3>
+        <p class="uppercase font-bold text-3xl">¿Por qué elegirnos?</p>
+        <hr class="w-1/3 m-auto h-px border-0 md:mx-0 my-4 opacity-25 bg-white" />
+        <ul class="ms-10 sm:ms-20 md:ms-5 text-start ">
+            <li class="list-disc">
+                <p>
+                    Somos una universidad con mas de <span class="font-bold"
+                        >56 años de trayectoria.</span
+                    >
+                </p>
+            </li>
+            <li class="list-disc">
+                <p>
+                    Rendis el 100% de la carrera<span class="font-bold">
+                        en tu casa.</span
+                    >
+                </p>
+            </li>
+            <li class="list-disc">
+                <p>
+                    Nuestro cuerpo docente cuenta con una destacada trayectoria
+                    profesional.
+                </p>
+            </li>
+            <li class="list-disc">
+                <p>
+                    <span class="font-bold">¡Valoramos tu esfuerzo!</span> Reconocimiento
+                    de tus materias cursadas en otra insitución.
+                </p>
+            </li>
+            <li class="list-disc">
+                <p>Descuentos especiales para empresas.</p>
+            </li>
+            <li class="list-disc">
+                <p>
+                    Contamos con <span class="font-bold"
+                        >beneficios exclusivos</span
+                    > y las mejores formas de financiación..
+                </p>
+            </li>
+        </ul>
+        <section class="flex justify-center flex-col md:flex-row gap-10 py-10">
+            <div class="flex flex-col items-center">
+                <div class="flex gap-1 items-center">
+                    <Icon name="book-open" size={70} />
+                    <span class="text-5xl font-bold">50</span>
+                </div> 
+                <span class="text-md md:text-lg">Programas</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="flex gap-1 items-center">
+                    <Icon name="hat-graduate" size={70} />
+                    <span class="text-5xl font-bold">30000</span>
+                </div>
+                <span class="text-md md:text-lg">Egresados</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="flex gap-1 items-center">
+                    <Icon name="statistics" size={70} />
+                    <span class="text-5xl font-bold">+56</span>
+                </div>
+                <span class="text-md md:text-lg">Años de trayectoria</span>
+            </div>
+        </section>
+    </div>
+</section>
